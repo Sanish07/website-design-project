@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+<title> project </title>
+<link rel="stylesheet" type ="text/css"  href="bg image.css">
+<script type="text/javascript">
+
+function validatedetails()
+{
+var fname=document.myform.fname.value;
+var lname=document.myform.lname.value;
+var txtEmail=document.myform.email.value;
+var n1=txtEmail.indexOf("@");
+var n2=txtEmail.lastIndexOf(".");
+var firstpassword=document.myform.pass1.value;  
+var secondpassword=document.myform.pass2.value;  
+var phnum=document.myform.phnum.value;  
+
+if(fname==null||fname=="")
+ {
+ alert("First Name cannot be a empty field!");
+ return false;
+ }
+
+else if(lname==null||lname=="")
+ {
+ alert("Last Name cannot be a empty field!");
+ return false;
+ }
+
+else if(n1<1||n2<n1+2||n2+2>=txtEmail.length)
+{
+  alert("Please Enter a valid email address");
+  return false;
+ }
+  
+else if(firstpassword==null||firstpassword=="")
+{
+  alert("Password must contain at least 8 characters!");
+  return false;
+ }
+
+else if(firstpassword.length<8)
+{
+  alert("Password must contain at least 8 characters!");
+  return false;
+ }
+
+else if(firstpassword!=secondpassword)
+{  
+   alert("Confirm Password must be same with your Pre-set password!");  
+   return false;  
+ }  
+ 
+else if(phnum==null||phnum=="")
+{
+  alert("Phone Number Field cannot be empty!");  
+  return false; 
+ }
+else if (isNaN(phnum))
+  {  
+  alert("Please Enter your Valid Registeterd Mobile Number...");  
+  return false;  
+  }
+return true;
+}
+</script>
+</head>
+<body>
+<p><center><font size="30"><b>Train Reservation System</b></p></center></font>
+<img src="logo.jpg" align="left" width="150">
+<img src="National Emblem.jpg" align="right" width="70">
+<img src="logo 2.jpg" align="right" width="170">
+<font color="blue" face="Gabriola" size="25">Indian Railways</font>
+<h4><pre>        Lifeline to the nation...</h4></pre>
+
+<div class="left-box">
+<h2 align="right">Login</h2>
+
+<form align="right">
+<input type="text" placeholder=" Enter Username"><br>
+<input type="Password" placeholder="Enter Password"><br>
+<input type="Submit" value="Login"><br></form>
+
+<form name="myform" method="post" action="Thank You.html" onsubmit="return validatedetails();" >
+<h2 align="right">SignUp<br>
+<input type="text" placeholder="First Name" name="fname"><br>
+<input type="text" placeholder="Last Name" name="lname"><br>
+<input type="text" placeholder="Enter E-mail" name="email"><br>
+<input type="text" placeholder="Enter Mobile Number" name="phnum"><span id="numloc"></span><br>
+<input type="password" placeholder="Enter Password" name="pass1"><br>
+<input type="password" placeholder="Confirm Password" name="pass2"><br>
+<input type="Submit" value="Sign Up"><br></h2>
+</form><br>
+<table border="1" bgcolor="white" cellspacing="5" cellpadding="5" bordercolor="green">
+<tr>
+<th>Home</th>
+<th>Book train Ticket</th>
+<th>Book Flight</th>
+</tr>
+<tr>
+<th>Contact Us</th>
+<th>My Account</th>
+<tr>
+<th>General</th>
+<th>One Way Trip</th>
+</tr>
+<tr>
+<th>Tatkal</th>
+<th>Round Trip</th>
+</tr>
+<tr>
+<th>Premium Tatkal </th>
+</tr>
+</tr>
+</table>
+<hr>
+<h2 align="left">Booking:</h2>
+</div>
+<div>
+<p><b>From</p>
+<input type="text" placeholder="Station Name">
+<p><b>To</b></p>
+<input type="text" placeholder="Station Name">
+<p><b>Date</b></p>
+<input type="Number" placeholder="DD//MM//YYYY" >
+<p><b>Time</b></p>
+</div>
+<hr>
+<h2>About Us:</h2>	
+<p>
+<ul type="Disc">
+<font color="white"
+<li><a href="https://www.coursehero.com/file/56169624/Model-SOP-2018pdf/">Model Schedule of Power Document for zonal Railways</a></li>
+<li><a href="https://www.indianrailways.gov.in/Reform-Perform-Transform%25202022_v10%2520(2).pdf&ved=2ahUKEwjJ0pr529roAhUWWX0KHbrdA6IQFjAAegQIARAB&usg=AOvVaw39inhhiTaOE8XH_-yShLhU">Process Flow to Achieve Vision 2022- Reform Perform and Transform of indian railways </a></li>
+<li><a href="http://www.indianrailways.gov.in/GST/index.html&ved=2ahUKEwjM8PmQ3NroAhUlzjgGHS5WAm0QFjADegQIBBAC&usg=AOvVaw3Jc8_m-EvqvV0TkJQ2p9Ok">GST-Indian Railways</a></li>
+<li><a href="http://www.indianrailways.gov.in/railwayboard/uploads/directorate/stat_econ/pdf_annual_report/Railway%2520Year%2520Book_2017_18.pdf&ved=2ahUKEwjEvc2w3NroAhWUwTgGHXi4DzUQFjAAegQIBRAC&usg=AOvVaw0qtYz6n4qob0ZLqp1UT3fD">e-Booklet on the Frieght and Passenger Business Action Plan 2017-18</a></li>
+<li><a href="https://m.youtube.com/watch%3Fv%3DcuS69fT6caA&ved=2ahUKEwjm-frW3NroAhVBT30KHSjEAzcQjjgwAHoECAkQAQ&usg=AOvVaw3UgKZN3BqldkkrTVg7Vh4D">Prevention of WannaCry Ransomware Threat-Session by CERT-in </a></li>
+<li><a href="http://www.railnews.in/bids-invited-from-advisers-for-strategic-disinvestment-of-3-psus/&ved=2ahUKEwit9NW23droAhVrxzgGHVByDmY4ChAWMAN6BAgHEAE&usg=AOvVaw3ysTdwTZKjFuHVhsgoP2nE">Disinvestment of Railway PSUs-IRCTC,IRFC,IRCON</a></li>
+<li><a href="https://www.indianrailways.gov.in/Ebook.html&ved=2ahUKEwjnxuDL3droAhVWwTgGHdG2AroQFjAAegQIAxAB&usg=AOvVaw0ctGlQJgPOaVt6EIaa4pn7">E-Books on Indian Railwayas</a></li>
+<li><a href="https://www.indianrailways.gov.in/railwayboard/view_section.jsp%3Flang%3D0%26id%3D0,1,304,366,1813&ved=2ahUKEwi6gNbd3droAhU54jgGHeGyC80QFjAAegQICBAC&usg=AOvVaw20u0KlSUDcxsPWOP6835-F">IR Transformation Lecture Series</a></li>
+<li><a href="https://www.indianrailways.gov.in/Presentation_3AUG__fin.pdf&ved=2ahUKEwiWpJbw3droAhVKzTgGHcQUDkAQFjADegQIAhAB&usg=AOvVaw24w-98nKQWutSu5utWK2Gk">Indian Railways: Growth and Challenges</a></li>
+<li><a href="https://www.indianrailways.gov.in/Railways%2520Presentation.pdf&ved=2ahUKEwj4jP7-3droAhWfzzgGHa4bDfsQFjACegQIBRAC&usg=AOvVaw34EgIOs5WrwF4HEzpL069N">Indian Railways Vision and Plans 2017-2019</a></li>
+</font>
+</p>
+</body>
+</html>

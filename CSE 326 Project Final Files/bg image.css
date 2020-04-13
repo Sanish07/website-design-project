@@ -1,0 +1,11 @@
+body,
+html{
+min-height:100%;
+}
+body
+{
+background-image:url("backgroundimg.jpg");
+background-repeat:no-repeat;
+background-opacity:75%;
+background-size:cover;
+}
